@@ -1,0 +1,44 @@
+body {
+	background-color: #000000;
+}
+
+a.chase_img img {
+	border: 2px solid;
+	border-radius: 3px;
+}
+
+#ci1 img{
+	border-color: #FF0000;
+}
+
+#ci2 img{
+	border-color: #FF8000;
+}
+
+#ci3 img{
+	border-color: #FFFF00;
+}
+
+#ci4 img{
+	border-color: #00FF00;
+}
+
+#ci5 img{
+	border-color: #00FF80;
+}
+
+#ci6 img{
+	border-color: #00FFFF;
+}
+
+#ci7 img{
+	border-color: #0000FF;
+}
+
+#ci8 img{
+	border-color: #8000FF;
+}
+
+#ci9 img{
+	border-color: #FF00FF;
+}
