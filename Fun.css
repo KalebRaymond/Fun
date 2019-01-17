@@ -2,17 +2,27 @@ body {
 	background-color: #000000;
 	display: inline-flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 div.main {
-
+	position: absolute;
+	max-width: 400px;
+	max-height: 400px;
+	
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 a.chase_img img {
 	border: 2px solid;
 	border-radius: 3px;
+}
+
+a.chase_img img:hover {
+	opacity: 0.66;
 }
 
 #ci1 img{
