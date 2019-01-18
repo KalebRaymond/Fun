@@ -6,8 +6,8 @@ body {
 
 div.main {
 	position: absolute;
-	max-width: 400px;
-	max-height: 400px;
+	max-width: 600px;
+	max-height: 600px;
 	
 	margin: auto;
 	top: 0;
@@ -17,6 +17,7 @@ div.main {
 }
 
 a.chase_img img {
+	margin: 10px;
 	border: 2px solid;
 	border-radius: 3px;
 }
