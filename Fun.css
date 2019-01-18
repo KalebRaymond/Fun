@@ -16,48 +16,48 @@ div.main {
 	right: 0;
 }
 
-a.chase_img img {
+a.chase_img_container img {
 	margin: 10px;
 	border: 2px solid;
 	border-radius: 3px;
 }
 
-a.chase_img img:hover {
+a.chase_img_container img:hover {
 	opacity: 0.66;
 }
 
-#ci1 img{
+#cic1 img{
 	border-color: #FF0000;
 }
 
-#ci2 img{
+#cic2 img{
 	border-color: #FF8000;
 }
 
-#ci3 img{
+#cic3 img{
 	border-color: #FFFF00;
 }
 
-#ci4 img{
+#cic4 img{
 	border-color: #00FF00;
 }
 
-#ci5 img{
+#cic5 img{
 	border-color: #00FF80;
 }
 
-#ci6 img{
+#cic6 img{
 	border-color: #00FFFF;
 }
 
-#ci7 img{
+#cic7 img{
 	border-color: #0000FF;
 }
 
-#ci8 img{
+#cic8 img{
 	border-color: #8000FF;
 }
 
-#ci9 img{
+#cic9 img{
 	border-color: #FF00FF;
 }
