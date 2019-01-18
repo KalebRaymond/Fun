@@ -9,11 +9,11 @@ div.main {
 	max-width: 600px;
 	max-height: 600px;
 	
-	margin: auto;
+	/*margin: auto;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	right: 0;*/
 }
 
 a.chase_img_container img {
