@@ -5,7 +5,7 @@ body {
 }
 
 div.main {
-	position: relative;
+	position: absolute;
 	max-width: 600px;
 	max-height: 600px;
 	
@@ -17,7 +17,7 @@ div.main {
 }
 
 a.chase_img_container img {
-	position: absolute;
+	position: relative;
 	margin: 10px;
 	border: 2px solid;
 	border-radius: 3px;
