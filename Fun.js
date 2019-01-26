@@ -2,21 +2,33 @@
 (function() {
     document.onmousemove = handleMouseMove;
     function handleMouseMove(event) {
-		var curY = document.getElementsByClassName("chase_img")[0].style.top;
-		var curX = document.getElementsByClassName("chase_img")[0].style.left;
+		var curElem = document.getElementsByClassName("chase_img")[0].getBoundingClientRect();
+		var curY = curElem.top;
+		var curX = curElem.left; 
 		
-		console.log(curX + ", " + curY);
+		console.log("a: " + curX + ", " + curY);
 		
-		var dX = event.pageX - curX;
-		var dY = event.pageY - curY;
-		var m = dY / dX;
+		if(event.pageY > curY)
+		{
+			curY++;
+		}
+		else if(event.pageY < curY)
+		{
+			curY--;
+		}
 		
-		curX += /*m * Math.cos(dX)*/ 1;
-		curY += /*m * Math.sin(dY)*/ 1;
-		//console.log(m);
+		if(event.pageX > curX)
+		{
+			curX++;
+		}
+		else if(event.pageX < curX)
+		{
+			curX--;
+		}
 		
+		console.log("b: " + curX + ", " + curY);
+
 		document.title = "" + event.pageX + ", " + event.pageY; 
-		
 		
 		document.getElementsByClassName("chase_img")[0].style.top = (curY - 200) + "px";
 		document.getElementsByClassName("chase_img")[0].style.left = (curX - 650) + "px";
