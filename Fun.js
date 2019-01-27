@@ -5,30 +5,13 @@
 		var curElem = document.getElementsByClassName("chase_img")[0].getBoundingClientRect();
 		var curY = curElem.top;
 		var curX = curElem.left; 
+			
+		curY += (event.pageY - curY) / 5;
+		curX += (event.pageX - curX) / 5;
 		
-		console.log("a: " + curX + ", " + curY);
-		
-		if(event.pageY > curY)
-		{
-			curY++;
-		}
-		else if(event.pageY < curY)
-		{
-			curY--;
-		}
-		
-		if(event.pageX > curX)
-		{
-			curX++;
-		}
-		else if(event.pageX < curX)
-		{
-			curX--;
-		}
-		
-		console.log("b: " + curX + ", " + curY);
+		//console.log("b: " + curX + ", " + curY);
 
-		document.title = "" + event.pageX + ", " + event.pageY; 
+		document.title = "" + event.pageX + ":" + Math.floor(curX) + " | " + event.pageY + ":" + Math.floor(curY); 
 		
 		document.getElementsByClassName("chase_img")[0].style.top = (curY - 200) + "px";
 		document.getElementsByClassName("chase_img")[0].style.left = (curX - 650) + "px";
